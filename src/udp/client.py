@@ -12,6 +12,6 @@ clientSocket.sendto(message.encode(),(server, port))
 
 modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
 
-print(f"[(serverAddress)] {modifiedMessage.decode()}")
+print(serverAddress, modifiedMessage.decode())  
 
 clientSocket.close() 
